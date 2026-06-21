@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+
+        body { margin: 0; font-family: sans-serif; }
+
+        .main-wrapper {
+            max-width: 900px; 
+            padding: 20px;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Mblade2.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background-blend-mode: darken;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;            
+            padding: 10px 50px;
+            background: #3a0606;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;                 
+            list-style: none;              
+            gap: 20px;                     
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li:last-child a {
+            background-color: #574747; 
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 500px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-container {
+            display: flex;        
+            flex-wrap: wrap;      
+            justify-content: center; 
+            gap: 40px;             
+            padding: 20px;
+        }
+
+        .card-image {
+            width: 100%;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .card-title {
+            margin: 0;
+            color: #4a5d4e;
+        }
+
+        .card-text {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .card:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px; 
+
+        }
+
+        .section-content {
+            min-height: 60vh; 
+            padding: 50px 0; 
+            flex-grow: 1; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #3a0606;
+            color: white;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #3a0606; 
+        }
+        
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .card-profile {
+            display: flex;
+            align-items: center; 
+            gap: 20px; 
+            background: rgb(6, 6, 51);
+            color: rgb(180, 179, 245);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 600px;
+        }
+
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .profile-info {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Mortenax Blade</h2>
+            <div class="main-wrapper">
+                <ul>
+                    <li><a href="#Story">Story</a></li>
+                    <li><a href="#Faction">Faction</a></li>
+                    <li><a href="https://www.dicoding.com/users/alsyaa/academies">DiCoding Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        
+        <section class="hero">
+            <div class="content">
+                <h3>Furnace Master</h3>
+                <h1>Mortenax Blade</h1>
+                <h2>Reforged in hellfire, tempered through
+                    endless suffering, <br> and destined to carve
+                    a path beyond fate itself.</h2>
+                </div>
+        </section>
+
+        
+        <section id="Story">
+            <div class="card">
+                <h3 class="card-title">Furnace Master</h3>
+                <img src="Mblade1.jpeg" alt="mbg" class="card-image">
+                <p class="card-text"> His body is like springwood. His heart is like dead ash. Yet still, a craftsman's spark cling to his fingertips.
+                    Ancient grudges flare anew. He vows to send both himself and that God over to the other shore.
+                    This body torn asunder, yet holding fast through a thousand temperings into a blade... What answer will it forge?</p>
+                </div>
+                
+                
+                <div class="card">
+                    <h3 class="card-title">Yingxing</h3>
+                    <img src="Mblade3.jpeg" alt="mbg" class="card-image">
+                    <p class="card-text"> Yingxing was a gifted craftsman who rose from a childhood of trauma to become a legendary weapon-maker for the Xianzhou. As an esteemed member of the High-Cloud Quintet, he forged iconic weapons and formed deep bonds
+                        with his companions, including Dan Feng and Baiheng. However, his life took a dark turn after the war against the Emanator Shuhu; following Baiheng’s death, Yingxing assisted Dan Feng in a forbidden ritual to defy mortality. The experiment
+                        failed catastrophically, leaving Yingxing cursed with immortality and the ravages of mara.
+                        <br><br>
+                        Driven by intense resentment, Yingxing was eventually hunted and trained by Jingliu, who repeatedly killed him to force him to confront his past karma. His cycle of suffering and vengeance eventually
+                        led him to be recruited by Elio. By joining the Stellaron Hunters, Yingxing accepted a new purpose: navigating the path toward his own "final funeral," seeking an end to his eternal existence and the
+                        destruction of everything he has come to hate.</p>
+                    </div>
+        </section>
+
+        <section id="Faction">
+            <div class="card">
+                <h3 class="card-title">New Faction</h3>
+                <img src="SH.jpeg" alt="mbg" class="card-image">
+                <p class="card-text"> The Stellaron Hunters, led by the enigmatic Elio, operate under his "script" to manipulate events and prevent the Theory of Four Apocalypses. By leveraging Elio’s precognitive abilities to orchestrate specific outcomes, the group aims to
+                    prepare the Trailblazer to ultimately confront Nanook and save the universe. While they formerly focused on Stellarons, their mission shifted with the Trailblazer's arrival, centering instead on guiding them toward this destiny. Notably, the group is accompanied
+                    by a mysterious entity linked to Terminus—often mistaken for Elio himself—while maintaining the secrecy of Elio’s true identity and his "special existence."</p>
+            </div>
+
+
+
+            <div class="card">
+                <h3 class="card-title">Old Faction</h3>
+                <img src="HCQ.jpeg" alt="mbg" class="card-image">
+                <p class="card-text">The High-Cloud Quintet was a legendary group of five heroes whose unity shattered after the tragic death of their
+                    comrade, Baiheng. In a desperate attempt to resurrect her, Dan Feng performed a forbidden ritual that resulted in a catastrophic failure. 
+                    This event led to the group's dissolution: Dan Feng was reincarnated as the exiled Dan Heng, Yingxing was cursed with immortality and became Blade, 
+                    Jingliu descended into madness, and only Jing Yuan remained to serve as the Arbiter-General of the Luofu.</p>
+            </div>
+        </section>
+
+        <div class="profile-container">
+            <div class="card-profile">
+                <img src="dede.jpg" class="profile-image">
+                
+                <div class="profile-info">
+                    <h3>Almas Maitsya Dz.R</h3>
+                    <p class="role">Student/Developer</p>
+                    <p><strong>Faction:</strong> Stellaron Hunters</p>
+                    <p><strong>Age:</strong> 16</p>
+                    <p class="quote">"Be kind before the darkness comes."</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+             © This Landing Page By Almas Maitsya Dz.R for DiCoding
+        </footer>
+</body>
+</html>
